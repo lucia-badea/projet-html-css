@@ -1,0 +1,259 @@
+/**************************DESCRIPTION EQUIPE*********************/
+
+#section-1 {
+    border-style: outset;
+    border-width: 2px;
+
+}
+
+.section__trait--reservation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.section__trait--reservation h3 {
+    color: #d00a0a;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.section__trait--reservation p {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.s__slogan-btn {
+    text-decoration: none;
+    padding: 15px 20px;
+    border: 2px solid #7d7070;
+    border-radius: 10px;
+    color: #7d7070;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 41px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.s__slogan-btn:hover {
+    background-color: #7d7070;
+    color: #fff;
+    font-weight: 300;
+}
+
+#section-2 {
+    padding: 10px 0px 100px 0;
+}
+
+.section__team--description {
+    padding: 0px 20%;
+}
+
+.section__team--description h2 {
+    color: #d00a0a;
+    text-align: center;
+    font-size: xx-large;
+    text-transform: uppercase;
+    margin-top: 78px;
+}
+
+.section__team--description p {
+    font-size: x-large;
+    text-align: center;
+}
+
+.red {
+    color: #d00a0a;
+}
+
+/*****************ACTUALITÉS****************************/
+
+#section-3 h2 {
+    color: #d00a0a;
+    text-align: center;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.section__actuality {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20%;
+    justify-content: space-between;
+}
+
+.section__actuality img {
+    width: 40%;
+    margin-top: 60px;
+}
+
+/*************LES FILMS**************/
+
+.section__carousel {
+    padding: 0px 24%;
+    margin-top: 100px;
+}
+
+.section__carousel h2 {
+    color: #d00a0a;
+    text-align: center;
+    font-size: xx-large;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+figure {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    padding: 1rem;
+}
+figure h3 {
+    font-size: 1rem;
+    color: #d00a0a; 
+}
+
+figure img {
+    width: 100%;
+}
+
+.carousel__items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+    justify-content: space-between;
+}
+
+.carousel-item {
+    margin-left: 1rem;
+    /*flex-grow: 1;*/
+    flex-shrink: 0;
+    flex-basis: 263px;
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+figcaption .button {
+    color: #7d7070;
+    cursor: pointer;
+    padding: 0.25rem 0.75rem;
+    font-size: small;
+}
+
+figcaption .button:hover {
+    color: #d00a0a;
+}
+
+/*************FORMULAIRE DE RÉSERVATION************/
+
+.form {
+    width: 100%;
+    background-color: #f0efef;
+    margin-top: 60px;
+    height: 450px;
+}
+
+.form__title {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: xx-large;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+
+.form__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 6%;
+    align-items: center;
+}
+
+.form__block {
+    width: 200px;
+    margin-right: 50px;
+}
+
+.form__label {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.form__input {
+    height: 45px;
+    border: 2px solid #7d7070;
+    border-radius: 10px;
+    width: 260px;
+    transition: all 0.3s ease-in-out;
+    padding-left: 7px;
+    font-size: 16px;
+    color: #d00a0a;
+    margin-top: 35px;
+}
+
+input::-webkit-input-placeholder {
+    color: #d00a0a !important;
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #d00a0a !important;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #d00a0a !important;
+}
+
+input:-ms-input-placeholder {
+    color: #d00a0a !important;
+}
+
+
+.i__reservation-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    color: #000;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    width: 200px;
+}
+
+.i__reservation-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    font-weight: 300;
+}
+
