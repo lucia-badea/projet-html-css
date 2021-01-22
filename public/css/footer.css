@@ -1,12 +1,14 @@
 footer {
     background-color: #7d7070;
 }
+
 #contener__footer {
     display: flex;
     padding: 0px 7%;
     justify-content: center;
     padding-top: 50px;
 }
+
 .menu__footer {
     display: flex;
     flex-direction: row;
@@ -15,20 +17,24 @@ footer {
     padding: 0;
     justify-content: center;
 }
+
 .menu__footer ul {
     display: flex;
     flex-direction: column;
-    }
-.menu__footer-links li a, .footer__contact {
+}
+
+.menu__footer-links li a,
+.footer__contact {
     font-size: 1.1em;
     color: white;
 }
+
 .menu__footer ul a {
     margin: 10px;
     text-transform: uppercase;
 }
 
-.footer__contact  {
+.footer__contact {
     text-transform: none;
 }
 
@@ -39,6 +45,7 @@ footer {
 .footer__contact {
     text-align: center;
 }
+
 #logo__footer {
     width: 350px;
     height: 350px;
@@ -53,4 +60,105 @@ footer {
 
 .icons__footer img {
     padding: 15% 5%;
+}
+
+/****************RESPONSIVE**************/
+
+@media only screen and (max-width: 1390px) {
+
+    #contener__footer {
+        padding: 0px 3%;
+        padding-top: 37px;
+    }
+
+    #logo__footer {
+        width: 300px;
+        height: 300px;
+        margin-top: -37px;
+    }
+
+    .menu__footer-links li a,
+    .footer__contact {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+
+    #logo__footer {
+        width: 220px;
+        height: 220px;
+        margin-top: 10px;
+    }
+
+    .icons__footer img {
+        padding: 10% 4%;
+        padding-top: 5em;
+    }
+
+    .menu__footer {
+        widows: 33%;
+        flex-direction: column-reverse;
+    }
+
+    .menu__footer ul {
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    .menu__footer ul li {
+        margin: 5px 0px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 820px) {
+
+    .menu__footer-links li a,
+    .footer__contact {
+        font-size: 0.9em;
+    }
+
+    .menu__footer ul {
+        margin-bottom: 8px;
+    }
+
+    #logo__footer {
+        width: 180px;
+        height: 180px;
+        margin-top: 10px;
+    }
+
+    .icons__footer img {
+        padding: 26% 4%;
+        padding-top: 6em;
+        width: 59px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    
+    #contener__footer {
+        flex-direction: column;
+    }
+    #logo__footer {
+        width: 350px;
+        height: 350px;
+        margin: 0px 19%;
+    }
+    .menu__footer {
+        margin: 0px 25%;
+    }
+    .menu__footer-links {
+        margin-bottom: 22px;
+    }
+    .menu__footer-links li a,
+    .footer__contact {
+        font-size: 1.4em;
+    }
+    .icons__footer img {
+        width: 100%;
+    }
+    
 }

@@ -1,4 +1,5 @@
-/**************************DESCRIPTION EQUIPE*********************/
+
+/**************************FIRST SECTION AFTER HEADER*********************/
 
 #section-1 {
     border-style: outset;
@@ -37,14 +38,17 @@
     text-align: center;
     margin-bottom: 41px;
     font-weight: 500;
-    transition: all 0.3s ease-in-out;
+    transition: transform 450ms, background-color 300ms 150ms;
 }
 
 .s__slogan-btn:hover {
     background-color: #7d7070;
     color: #fff;
     font-weight: 300;
+    transform: scale(1.13);
 }
+
+/**************************DESCRIPTION EQUIPE*********************/
 
 #section-2 {
     padding: 10px 0px 100px 0;
@@ -80,16 +84,75 @@
     text-transform: uppercase;
 }
 
-.section__actuality {
+.section__actuality-images {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 20%;
     justify-content: space-between;
 }
 
-.section__actuality img {
-    width: 40%;
+.section__actuality {
+
+    cursor: pointer;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    text-align: center;
     margin-top: 60px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 500ms;
+}
+
+.section__actuality:hover {
+    transform: scale(1.15);
+}
+
+.section__actuality .fadedbox {
+    background-color: #666666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 400px;
+    height: 300px;
+    padding: 130px 20px;
+}
+
+.section__actuality:hover .fadedbox {
+    opacity: 0.8;
+}
+
+.section__actuality .text {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+}
+
+.section__actuality .title {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+
+.section__actuality:hover .title,
+.section__actuality:focus .title {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
 }
 
 /*************LES FILMS**************/
@@ -112,9 +175,10 @@ figure {
     border-radius: 8px;
     padding: 1rem;
 }
+
 figure h3 {
     font-size: 1rem;
-    color: #d00a0a; 
+    color: #d00a0a;
 }
 
 figure img {
@@ -150,6 +214,7 @@ figure img {
     background-color: #3d4852;
     border-radius: 3px;
 }
+
 figcaption .button {
     color: #7d7070;
     cursor: pointer;
@@ -247,7 +312,7 @@ input:-ms-input-placeholder {
     text-align: center;
     margin-top: 30px;
     font-weight: 500;
-    transition: all 0.3s ease-in-out;
+    transition: transform 450ms, background-color 300ms 150ms;
     width: 200px;
 }
 
@@ -255,5 +320,19 @@ input:-ms-input-placeholder {
     background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
     font-weight: 300;
+    transform: scale(1.13);
 }
 
+/***************RESPONSIVE*****************************/
+
+@media only screen and (max-width: 630px) {
+    
+    /********RESPONSIVE RESERVATION PAGE ACCUEIL******************/
+    
+    .form {
+       height: 700px; 
+    }
+    .form__inner {
+        flex-direction: column;
+    }
+}
