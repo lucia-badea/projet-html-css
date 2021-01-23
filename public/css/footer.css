@@ -138,27 +138,56 @@ footer {
 }
 
 @media only screen and (max-width: 630px) {
-    
+
     #contener__footer {
         flex-direction: column;
+        padding: 0;
     }
+
     #logo__footer {
-        width: 350px;
-        height: 350px;
-        margin: 0px 19%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        margin-bottom: 17px;
     }
+
     .menu__footer {
-        margin: 0px 25%;
+        width: 100%;
     }
+
     .menu__footer-links {
         margin-bottom: 22px;
     }
+
     .menu__footer-links li a,
     .footer__contact {
         font-size: 1.4em;
     }
-    .icons__footer img {
-        width: 100%;
+
+    .icons__footer {
+        justify-content: space-around;
     }
-    
+
+    .icons__footer img {
+        width: 100px;
+        padding: 26% 3%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .icons__footer img {
+        width: 73px;
+
+    }
+
+    .menu__footer-links li a,
+    .footer__contact {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 393px) {
+
 }

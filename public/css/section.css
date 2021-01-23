@@ -1,9 +1,7 @@
-
 /**************************FIRST SECTION AFTER HEADER*********************/
 
 #section-1 {
-    border-style: outset;
-    border-width: 2px;
+    border-bottom: 1px solid #000;
 
 }
 
@@ -141,7 +139,7 @@
 }
 
 .section__actuality .title {
-    font-size: 2.5em;
+    font-size: 2em;
     text-transform: uppercase;
     opacity: 0;
     transition-delay: 0.2s;
@@ -232,7 +230,7 @@ figcaption .button:hover {
     width: 100%;
     background-color: #f0efef;
     margin-top: 60px;
-    height: 450px;
+    height: 470px;
 }
 
 .form__title {
@@ -303,7 +301,7 @@ input:-ms-input-placeholder {
 
 .i__reservation-btn {
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 7px 20px;
     border: 2px solid #000;
     border-radius: 10px;
     color: #000;
@@ -323,16 +321,177 @@ input:-ms-input-placeholder {
     transform: scale(1.13);
 }
 
+.reservation__acceptance {
+    text-align: center;
+    margin-top: 34px;
+}
+
+.reservation__acceptance a {
+    color: #d00a0a;
+    font-weight: 500;
+}
+
 /***************RESPONSIVE*****************************/
 
 @media only screen and (max-width: 630px) {
-    
+
     /********RESPONSIVE RESERVATION PAGE ACCUEIL******************/
-    
+
     .form {
-       height: 700px; 
+        height: 700px;
     }
+
     .form__inner {
         flex-direction: column;
+    }
+
+    .reservation__acceptance {
+        font-size: 0.9em;
+    }
+}
+
+/********RESPONSIVE PREMIERE SECTION PAGE ACCUEIL******************/
+
+@media only screen and (max-width: 980px) {
+    .s__slogan-btn {
+        padding: 10px 7px;
+        font-size: 1em;
+        margin-bottom: 57px;
+        font-weight: 800;
+    }
+
+    .section__trait--reservation h3,
+    .section__trait--reservation p {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .s__slogan-btn {
+        padding: 10px 7px;
+        font-size: 0.8em;
+        margin-bottom: 28px;
+        font-weight: 800;
+    }
+
+    .section__trait--reservation h3,
+    .section__trait--reservation p {
+        font-size: 1.2em;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .section__trait--reservation h3,
+    .section__trait--reservation p {
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    #section-1 {
+        display: none;
+    }
+
+    .section__trait--reservation {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+    }
+
+    .slogan__btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .s__slogan-btn {
+        padding: 11px 12px;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (min-width: 571px) {
+    #section-1-responsive {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 981px) {
+    #section-1-responsive {
+        display: none;
+    }
+}
+
+/********RESPONSIVE DESCRIPTION EQUIPE PAGE ACCUEIL******************/
+
+@media only screen and (max-width: 760px) {
+
+    .section__team--description h2,
+    #section-3 h2,
+    .section__carousel h2,
+    .form__title {
+        margin-top: 35px;
+        font-size: x-large;
+    }
+
+    .section__team--description {
+        font-size: large;
+        padding: 0px 7%;
+    }
+}
+
+/********RESPONSIVE SECTION ACTUALITES PAGE ACCUEIL******************/
+
+@media only screen and (max-width: 1400px) {
+    .section__actuality-images {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+
+    .section__actuality,
+    .section__actuality img,
+    .section__actuality .fadedbox {
+        width: 300px;
+        height: 200px;
+    }
+
+    .section__actuality .title {
+        font-size: 1.5em;
+    }
+
+    .section__actuality .fadedbox {
+        padding: 70px 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .section__actuality,
+    .section__actuality img,
+    .section__actuality .fadedbox {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section__actuality .title {
+        font-size: 1.1em;
+    }
+
+    .section__actuality .fadedbox {
+        padding: 0;
+    }
+
+}
+
+/********RESPONSIVE SECTION LES FILMS PAGE ACCUEIL******************/
+
+@media only screen and (max-width: 500px) {
+    .section__carousel {
+        padding: 0;
     }
 }
