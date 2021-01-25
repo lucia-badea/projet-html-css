@@ -7,6 +7,7 @@ footer {
     padding: 0px 7%;
     justify-content: center;
     padding-top: 50px;
+    margin-top: 50px;
 }
 
 .menu__footer {
@@ -63,6 +64,11 @@ footer {
 }
 
 /****************RESPONSIVE**************/
+@media only screen and (min-width: 1390px) {
+        .icons__footer img {
+        padding: 68% 21%;
+    }
+}
 
 @media only screen and (max-width: 1390px) {
 
@@ -81,7 +87,11 @@ footer {
     .footer__contact {
         font-size: 1em;
     }
+      .icons__footer img {
+        padding: 78% 18%;
+    }
 }
+
 
 @media only screen and (max-width: 1170px) {
 
@@ -92,8 +102,7 @@ footer {
     }
 
     .icons__footer img {
-        padding: 10% 4%;
-        padding-top: 5em;
+        padding: 100px 17px;
     }
 
     .menu__footer {
@@ -133,6 +142,7 @@ footer {
     .icons__footer img {
         padding: 26% 4%;
         padding-top: 6em;
+        margin-right: 8px;
         width: 59px;
     }
 }
@@ -156,7 +166,7 @@ footer {
     }
 
     .menu__footer-links {
-        margin-bottom: 22px;
+        margin-top: 35px;
     }
 
     .menu__footer-links li a,
@@ -169,8 +179,8 @@ footer {
     }
 
     .icons__footer img {
-        width: 100px;
-        padding: 26% 3%;
+        width: 80px;
+        padding: 49% 6%;
     }
 
 }
@@ -181,6 +191,9 @@ footer {
         width: 73px;
 
     }
+    .menu__footer-links {
+        margin-top: 35px;
+    }
 
     .menu__footer-links li a,
     .footer__contact {
@@ -188,6 +201,3 @@ footer {
     }
 }
 
-@media only screen and (max-width: 393px) {
-
-}

@@ -1,0 +1,88 @@
+.header__actuality {
+    height: 100px;
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+
+.header__actuality #header__navbar--logo {
+    margin-top: 125px;
+}
+
+#page__actualites {
+    padding-left: 22%
+}
+
+#page__actualites h2 {
+    color: #514d4d;
+    font-size: xx-large;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.page__section-actuality {
+    display: flex;
+    padding-left: 5%;
+    margin-bottom: 5em;
+}
+
+.page__section-actuality p {
+    padding: 0 10%;
+    text-align: center;
+
+}
+
+.page__actuality h3 {
+    color: #d00a0a;
+    font-size: 1.3em;
+    margin: 40px 0;
+    text-transform: uppercase;
+    padding: 0 2%;
+}
+
+/**************RESPONSIVE*************************/
+
+@media all and (min-width: 751px) and (max-width: 1400px) {
+    .page__section-actuality p {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .header__actuality #header__navbar--logo {
+        width: 150px;
+        height: 150px;
+        margin-top: 63px;
+    }
+
+    #page__actualites {
+        padding: 0;
+    }
+
+    #page__actualites h2,
+    .page__actuality h3 {
+        text-align: center;
+    }
+
+    .page__section-actuality {
+        flex-direction: column;
+    }
+
+    .page__section-actuality img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .page__section-actuality p {
+        margin-top: 31px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .header__actuality #header__navbar--logo {
+        width: 125px;
+        height: 125px;
+        margin-top: 9px;
+    }
+}

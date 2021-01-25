@@ -480,6 +480,7 @@ input:-ms-input-placeholder {
 
     .section__actuality .title {
         font-size: 1.1em;
+        margin-top: 5em
     }
 
     .section__actuality .fadedbox {
@@ -493,5 +494,6 @@ input:-ms-input-placeholder {
 @media only screen and (max-width: 500px) {
     .section__carousel {
         padding: 0;
+       margin: 0 2em;
     }
 }
