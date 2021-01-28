@@ -57,47 +57,35 @@
 
     </header>
 
-    <main>
-
-        <section class="section-5">
-            <div class="form-reservation">
-                <div class="form__title">Réservation en ligne</div>
-                <form class="form__inner-reservation" action="">
-                    <div class="form__column">
-                        <div class="form__block-reservation">
-                            <input class="r__form-input" type="text" placeholder="Nom et Prénom">
-                        </div>
-                        <div class="form__block-reservation">
-                            <input class="r__form-input" type="text" placeholder="Email">
-                        </div>
-                        <div class="form__block-reservation">
-                            <input class="r__form-input" type="text" placeholder="Téléphone">
-                        </div>
-
-                        <div class="form__block-reservation">
-                            <select size="1" class="r__form-input">
-                                <option>Ma Séance</option>
-                                <option>PAPI SITTER 6 août à 18h</option>
-                                <option>PAPI SITTER 6 août à 18h</option>
-                            </select>
-                        </div>
-
-                        <div class="form__block-reservation">
-                            <input class="r__form-input" type="text" placeholder="Nb. places">
-                        </div>
-                        <a href="" class="i__reservation_btn">Réserver</a>
-                    </div>
 
 
-                </form>
-                <div class="reservation__acceptance">
-                    <input type="checkbox" name="reservation" id="acceptance">
-                    <label for="acceptance">J'accepte les conditions d'utilisation des données. <a href="#">En savoir plus</a></label>
+
+    <div class="form-reservation">
+        <h2>Réservation en ligne</h2>
+        <form class="form__inner-reservation" action="">
+           <div class="form__column">
+            <div class="form__block-reservation">
+                    <input class="r__form-input" type="text" placeholder="Nom et Prénom">
+                    <input class="r__form-input" type="email" placeholder="Email">
+                    <input class="r__form-input" type="tel" placeholder="Téléphone">
+                    <select size="1" class="r__form-input">
+                        <option>Ma Séance</option>
+                        <option>PAPI SITTER 6 août à 18h</option>
+                        <option>PAPI SITTER 6 août à 18h</option>
+                    </select>
+                    <input class="r__form-input" type="number" placeholder="Nb. places">
                 </div>
+                <a href="" class="i__reservation_btn">Réserver</a>
             </div>
-        </section>
+        </form>
+        <div class="reservation__acceptance">
+            <input type="checkbox" name="reservation" id="acceptance">
+            <label for="acceptance">J'accepte les conditions d'utilisation des données. <a href="#">En savoir plus</a></label>
+        </div>
+    </div>
 
-    </main>
+
+
     <footer>
         <div id="contener__footer">
 
