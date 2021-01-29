@@ -29,6 +29,9 @@ footer {
     font-size: 1.1em;
     color: white;
 }
+.menu__footer-links li a:hover {
+    color: #d00a0a;
+}
 
 .menu__footer ul a {
     margin: 10px;

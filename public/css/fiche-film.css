@@ -1,0 +1,247 @@
+.fiche__film-container {
+    padding: 0 13em;
+}
+
+.fiche__film .form__title {
+    display: flex;
+}
+
+.fiche__film .form__title h2 {
+    font-size: xx-large;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    width: 50%;
+    text-transform: uppercase;
+    text-align: right;
+
+}
+
+.page__fiche-film {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details__film li {
+    color: #d00a0a;
+    font-weight: 500;
+}
+
+.details__film span {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.p__details {
+    display: flex;
+}
+
+.p__details ul {
+    padding-left: 4em;
+}
+
+.p__details li {
+    margin-bottom: 0.5em;
+}
+
+.p__details-two li {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.details__film .s__slogan-btn {
+    padding: 11px 14px;
+    border: 1px solid #7d7070;
+    border-radius: 5px;
+    font-size: 1.3em;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.p__details-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p__details-three p {
+    padding: 1em;
+    color: #d00a0a;
+    font-size: 1.4em;
+}
+
+.fiche__section-two {
+    padding: 52px 75px;
+}
+
+.fiche__section-two iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 5em;
+}
+
+.parc__map span {
+    color: #d00a0a;
+}
+
+.parc__map {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4em;
+}
+
+.parc__map p {
+    font-size: x-large;
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+.button__fiche a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #d00a0a;
+    border-radius: 10px;
+    color: #d00a0a;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 65px 15px 0 15px;
+    font-weight: 500;
+    transition: transform 450ms, background-color 300ms 150ms;
+}
+
+.button__fiche a:hover {
+    background-color: rgba(208, 10, 10, 0.9);
+    color: #fff;
+    font-weight: 300;
+    transform: scale(1.13);
+}
+
+.button__fiche {
+    display: flex;
+    justify-content: space-between;
+}
+
+/**********RESPONSIVE*************/
+@media only screen and (max-width: 1450px) {
+    .fiche__film-container {
+        padding: 0;
+    }
+
+    .page__fiche-film {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page__fiche-film img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .p__details {
+        display: flex;
+        justify-content: center;
+        margin-top: 4em;
+    }
+}
+
+@media only screen and (max-width: 1245px) {
+    .fiche__section-two p {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .fiche__section-two {
+        padding: 0;
+    }
+
+    .fiche__section-two p {
+        padding: 0 4em;
+    }
+
+    .fiche__section-two iframe {
+        width: 400px;
+        height: 250px;
+        padding: 0
+    }
+
+    .p__details ul {
+        padding-left: 3em;
+    }
+
+    .parc__map {
+        flex-direction: column;
+        align-items: center;
+        padding: 3em;
+    }
+
+    .parc__map p {
+        font-size: large;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 3em;
+    }
+
+    .button__fiche a {
+        font-size: 1em;
+    }
+
+    .contact-icons {
+        position: absolute;
+        flex-direction: column;
+        margin-top: 8em;
+        margin-left: -3em;
+    }
+
+    .contact-icons a {
+        padding: 0.8em 0;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .fiche__section-two iframe {
+        width: 320px;
+        height: 220px;
+    }
+
+    .parc__map iframe {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .page__fiche-film img {
+        width: 225px;
+        height: 300px;
+    }
+
+    .contact-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .contact-icons {
+        margin-left: -2.4em;
+        margin-top: 6em;
+    }
+
+    .fiche__film .form__title h2 {
+        font-size: 1em;
+    }
+
+    .p__details li {
+        font-size: 0.9em;
+    }
+
+    .p__details-three p {
+        font-size: 1.2em;
+        text-align: center;
+
+    }
+    .button__fiche a {
+        font-size: 0.8em;
+    }
+}

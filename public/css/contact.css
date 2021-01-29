@@ -84,6 +84,10 @@
 .contact-icons a {
     padding-right: 1em;
 }
+.contact-icons img {
+    width: 33px;
+    height: 33px;
+}
 
 .i__contact_btn {
     text-decoration: none;
