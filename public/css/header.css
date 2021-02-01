@@ -170,19 +170,25 @@ header li a:active {
     }
 
 }
-
-@media all and (min-width: 990px) and (max-width: 1024px) {
-    .h__slogan--title {
-        margin-right: 6vw;
-    }
+@media only screen and (min-width: 1800px) {
+	.h__slogan--title {
+		line-height: 1.3em;
+		font-size: 4vh;
+		margin-top: 4em;
+	}
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1025px) {
 
      #header__navbar--logo {
         width: 200px;
         height: 200px;
         margin-top: 80px;
+    }
+	    .h__slogan--title {
+        margin-right: 6vw;
+		font-size: 4vh;
+		margin-top: 3em;
     }
     
     .h__slogan--title {
